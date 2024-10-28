@@ -7,7 +7,25 @@
     <title>sample</title>
 </head>
 <body>
-    
+    <div id="app">
+        <button 
+            @click="double"
+        >2倍</button>
+        <button
+            @click="half"
+        >1/2</button>
+        <button
+            @click="reset"
+        >リセット</button><br>
+        <input v-model.number = "num" type="text" placeholder="0">
+        <button
+            @click="add"
+        >追加</button>
+        <button
+            @click="pull"
+        >減少</button>
+        <p>{{ count }}</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./script/script.js"></script>
 </body>
